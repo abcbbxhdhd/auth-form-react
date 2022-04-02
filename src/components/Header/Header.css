@@ -1,0 +1,25 @@
+header {
+    height: 70px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout__enabled {
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.logout__disabled {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: lightgray;
+}
+
+.email__info {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: gray;
+}
