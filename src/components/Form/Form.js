@@ -8,3 +8,5 @@ function Form({ children }) {
         </div>
     )
 }
+
+export default Form

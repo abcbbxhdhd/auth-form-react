@@ -1,0 +1,16 @@
+.submit-button {
+    margin-top: 20px;
+    width: fit-content;
+    height: 40px;
+    border: 1px solid black;
+    background: transparent;
+    font-size: larger;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.submit-button:active {
+    color: white;
+    background: gray;
+    border: 1px solid black;
+}
