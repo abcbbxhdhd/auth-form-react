@@ -1,0 +1,10 @@
+.form-lower-label {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-lower-label__link {
+    text-decoration-line: underline;
+    color: gray;
+    cursor: pointer;
+}
