@@ -7,6 +7,8 @@ import { auth } from '../../firebase-config'
 import Email from '../../components/Email/Email'
 import FormTitle from '../../components/FormTitle/FormTitle'
 import FormLowerLabel from '../../components/FormLowerLabel/FormLowerLabel'
+import "./LoginView.css"
+import Layout from '../../components/Layout/Layout'
 
 function LoginView() {
     const [input, setInput] = useState({
@@ -33,13 +35,15 @@ function LoginView() {
     }
 
     return (
-        <Form>
-            <FormTitle type="login" />
-            <Email onChange={onChange} value={input.email} />
-            <Password onChange={onChange} value={input.password} />
-            <Button type="login" onClick={onClick} />
-            <FormLowerLabel type="login" />
-        </Form>
+        <Layout>
+            <Form>
+                <FormTitle type="login" />
+                <Email onChange={onChange} value={input.email} />
+                <Password onChange={onChange} value={input.password} />
+                <Button type="login" onClick={onClick} />
+                <FormLowerLabel type="login" />
+            </Form>
+        </Layout>
     )
 }
 

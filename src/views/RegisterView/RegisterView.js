@@ -5,6 +5,7 @@ import Email from "../../components/Email/Email"
 import Form from "../../components/Form/Form"
 import FormLowerLabel from "../../components/FormLowerLabel/FormLowerLabel"
 import FormTitle from "../../components/FormTitle/FormTitle"
+import Layout from "../../components/Layout/Layout"
 import Password from "../../components/Password/Password"
 import { auth } from "../../firebase-config"
 
@@ -37,14 +38,16 @@ function RegisterView() {
     }
 
     return (
-        <Form>
-            <FormTitle type="register" />
-            <Email value={input.email} onChange={onChange}/>
-            <Password value={input.password} onChange={onChange}/>
-            <Password confirmation value={input.confirmation} onChange={onChange}/>
-            <Button type="register" onClick={onClick} />
-            <FormLowerLabel type="register" />
-        </Form>
+        <Layout>
+            <Form>
+                <FormTitle type="register" />
+                <Email value={input.email} onChange={onChange}/>
+                <Password value={input.password} onChange={onChange}/>
+                <Password confirmation value={input.confirmation} onChange={onChange}/>
+                <Button type="register" onClick={onClick} />
+                <FormLowerLabel type="register" />
+            </Form>
+        </Layout>
     )
 }
 
